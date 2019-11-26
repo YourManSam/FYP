@@ -20,13 +20,15 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-WH-QMk">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNi-s0-ibo">
                                         <rect key="frame" x="0.0" y="70" width="295" height="50"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhB-wD-0IE">
                                         <rect key="frame" x="0.0" y="140" width="295" height="50"/>
@@ -82,14 +84,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfJ-ou-NNW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Student ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfJ-ou-NNW">
                                 <rect key="frame" x="16" y="74" width="156" height="32"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="116330181" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-u6-LG8">
-                                <rect key="frame" x="28" y="363.66666666666669" width="128" height="32.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="116330181" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-u6-LG8">
+                                <rect key="frame" x="28" y="363.66666666666674" width="128" height="32.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -168,22 +170,35 @@
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCC" translatesAutoresizingMaskIntoConstraints="NO" id="3DE-IO-QEN">
+                                <rect key="frame" x="198" y="66" width="161" height="67"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="headshot" translatesAutoresizingMaskIntoConstraints="NO" id="0wa-lk-lVP">
+                                <rect key="frame" x="16" y="133" width="156" height="223"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="3bP-3w-mVN" firstAttribute="top" secondItem="3DE-IO-QEN" secondAttribute="bottom" constant="8" id="09m-EY-M8a"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="trailing" secondItem="Qoc-IB-PHe" secondAttribute="trailing" constant="93" id="0Pd-dR-kA3"/>
                             <constraint firstItem="kxC-hJ-5fV" firstAttribute="top" secondItem="Qoc-IB-PHe" secondAttribute="bottom" constant="69" id="1oS-o1-5R0"/>
+                            <constraint firstItem="3bP-3w-mVN" firstAttribute="leading" secondItem="0wa-lk-lVP" secondAttribute="trailing" constant="26" id="6QE-Y7-sJ1"/>
                             <constraint firstItem="kxC-hJ-5fV" firstAttribute="leading" secondItem="SMV-u6-LG8" secondAttribute="leading" id="6Yg-7N-v96"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="bottom" secondItem="SMV-u6-LG8" secondAttribute="bottom" constant="382" id="9Iq-Jl-vqO"/>
                             <constraint firstItem="3bP-3w-mVN" firstAttribute="top" secondItem="i7L-TL-Egp" secondAttribute="top" constant="97" id="9Vi-UJ-Vcg"/>
+                            <constraint firstItem="3DE-IO-QEN" firstAttribute="leading" secondItem="GfJ-ou-NNW" secondAttribute="trailing" constant="26" id="CUD-2f-QPd"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="trailing" secondItem="GfJ-ou-NNW" secondAttribute="trailing" constant="203" id="JcG-sm-jVN"/>
                             <constraint firstItem="SMV-u6-LG8" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="28" id="NtA-34-bBE"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="bottom" secondItem="wet-JT-omy" secondAttribute="bottom" constant="206" id="Sjy-NZ-0Tv"/>
+                            <constraint firstItem="0wa-lk-lVP" firstAttribute="top" secondItem="GfJ-ou-NNW" secondAttribute="bottom" constant="27" id="W2F-Ur-vik"/>
                             <constraint firstItem="wet-JT-omy" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="30" id="Ycg-9d-G9w"/>
+                            <constraint firstItem="3DE-IO-QEN" firstAttribute="top" secondItem="i7L-TL-Egp" secondAttribute="top" constant="22" id="acW-eV-7rB"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="bottom" secondItem="Qoc-IB-PHe" secondAttribute="bottom" constant="151" id="c8s-qQ-Zey"/>
                             <constraint firstItem="kxC-hJ-5fV" firstAttribute="trailing" secondItem="wet-JT-omy" secondAttribute="trailing" id="dVF-cJ-vbv"/>
                             <constraint firstItem="GfJ-ou-NNW" firstAttribute="top" secondItem="i7L-TL-Egp" secondAttribute="top" constant="30" id="dfY-WE-6Rk"/>
+                            <constraint firstItem="SMV-u6-LG8" firstAttribute="top" secondItem="0wa-lk-lVP" secondAttribute="bottom" constant="7.6699999999999999" id="dnP-Zx-6Jr"/>
                             <constraint firstItem="Qoc-IB-PHe" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="93" id="eWb-Gy-qCB"/>
+                            <constraint firstItem="i7L-TL-Egp" firstAttribute="trailing" secondItem="3DE-IO-QEN" secondAttribute="trailing" constant="16" id="gSu-Ri-bGy"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="bottom" secondItem="kxC-hJ-5fV" secondAttribute="bottom" constant="10" id="lZ2-gd-r25"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="trailing" secondItem="3bP-3w-mVN" secondAttribute="trailing" constant="30" id="ojA-db-hdH"/>
                             <constraint firstItem="3bP-3w-mVN" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="198" id="q7m-Wq-mFX"/>
@@ -192,12 +207,21 @@
                             <constraint firstItem="GfJ-ou-NNW" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="16" id="uAd-sz-yca"/>
                             <constraint firstItem="wet-JT-omy" firstAttribute="top" secondItem="3bP-3w-mVN" secondAttribute="bottom" constant="180" id="uCj-KV-cWU"/>
                             <constraint firstItem="i7L-TL-Egp" firstAttribute="trailing" secondItem="wet-JT-omy" secondAttribute="trailing" constant="30" id="yzb-SJ-QBd"/>
+                            <constraint firstItem="0wa-lk-lVP" firstAttribute="leading" secondItem="i7L-TL-Egp" secondAttribute="leading" constant="16" id="zsu-db-uho"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i7L-TL-Egp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VlZ-JQ-CpF"/>
                     <connections>
-                        <outlet property="RealTime" destination="kxC-hJ-5fV" id="cNX-Ka-r4K"/>
+                        <outlet property="course" destination="onn-b9-6xs" id="x9n-NU-2A5"/>
+                        <outlet property="degreeType" destination="Vx4-ic-fZg" id="usa-Xu-afB"/>
+                        <outlet property="dob" destination="Kbd-j3-2Pr" id="hUO-FS-MrR"/>
+                        <outlet property="expiry" destination="ETo-6j-Bgc" id="Ty5-b5-fp8"/>
+                        <outlet property="name" destination="wet-JT-omy" id="1Ab-aI-Tav"/>
                         <outlet property="realTime" destination="kxC-hJ-5fV" id="djB-sM-cQf"/>
+                        <outlet property="status" destination="pvc-6x-poy" id="K2N-9f-mOM"/>
+                        <outlet property="studentNum" destination="SMV-u6-LG8" id="Zuy-wz-Z94"/>
+                        <outlet property="yearOfStudy" destination="JHf-0q-i8H" id="02u-KD-zVC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XX4-u7-SQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -222,4 +246,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UCC" width="1170" height="633"/>
+        <image name="headshot" width="2400" height="3000"/>
+    </resources>
 </document>

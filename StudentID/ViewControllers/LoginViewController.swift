@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool){
         
         //set up video in background
-        setUpVideo()
+       // setUpVideo()
         
     }
     
@@ -61,7 +61,7 @@ class LoginViewController: UIViewController {
     }
     
     //calling set up video function
-    func setUpVideo(){
+    /*func setUpVideo(){
         
         //get the path to resource in the bundle
        let bundlePath = Bundle.main.path(forResource: "UCCpan", ofType: "mp4")
@@ -97,7 +97,7 @@ class LoginViewController: UIViewController {
         //add it to the view
         videoPlayer?.play()
         
-    }
+    }*/
     
     //action of the button
     @IBAction func LoginTapped(_ sender: Any) {
